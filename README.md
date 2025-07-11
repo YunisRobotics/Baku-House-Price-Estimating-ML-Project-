@@ -60,10 +60,10 @@ pip install pandas numpy scikit-learn matplotlib seaborn Pillow
 8. View the predicted price popup.
 
 ## File Structure
-`your_script.py` — main Python script with GUI and model.
-`processed_file_new.xlsx` — preprocessed housing dataset.
-`favicon.ico` — application icon.
-`baku_image.png` — background image used in GUI.
+- `your_script.py` — main Python script with GUI and model.
+- `processed_file_new.xlsx` — preprocessed housing dataset.
+- `favicon.ico` — application icon.
+- `baku_image.png` — background image used in GUI.
 
 ## Customization
 - Modify model parameters or try different regressors.
