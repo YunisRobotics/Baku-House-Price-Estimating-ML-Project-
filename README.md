@@ -21,7 +21,7 @@ This is an interactive machine learning application that predicts house prices i
 
 ## Project Screenshot
 
-![Project Screenshot](https://drive.google.com/file/d/1_XQGTMzMKJQozGAAfo-yQPf0Z3InODmA/view?usp=sharing)
+![Project Screenshot](https://drive.google.com/uc?export=view&id=1_XQGTMzMKJQozGAAfo-yQPf0Z3InODmA)
 
 ---
 
