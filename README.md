@@ -38,9 +38,9 @@ This is an interactive machine learning application that predicts house prices i
 
 Install required packages with:
 
-bash
+```bash
 pip install pandas numpy scikit-learn matplotlib seaborn Pillow
-
+```
 
 ## How It Works
 1. Loads and preprocesses the dataset (processed_file_new.xlsx).
