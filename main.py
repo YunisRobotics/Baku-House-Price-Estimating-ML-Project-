@@ -198,25 +198,31 @@ def ask_category():
 def ask_region():
     label = tk.Label(root, text="Select the region:", font=("Helvetica", 16, "bold"), bg="white")
     label.pack(pady=15)
+
     region_list = [
-        "Nizami", "Yasamal", "Nerimanov", "Bineqedi", "Khatai",
-        "Sabail", "Surakhani", "Nasimi", "Garadagh", "Sabunchu"
+        "Nizami", "Yasamal", "Nerimanov", "Bineqedi", "Xetai",
+        "Sebail", "Suraxani", "Nesimi", "Qaradag", "Sabunchu",
+        "Absheron", "Xezer"
     ]
+
+    region_frame = tk.Frame(root, bg="white")
+    region_frame.pack()
 
     buttons = []
 
     def select_region(region_name):
         user_data['region'] = region_name
         label.pack_forget()
-        for btn in buttons:
-            btn.pack_forget()
+        region_frame.pack_forget()
         run_prediction()
 
-
-    for region in region_list:
-        btn = tk.Button(root, text=region, font=("Helvetica", 12), width=15,
+    # Place buttons in 2 columns
+    for i, region in enumerate(region_list):
+        row = i % (len(region_list) // 2 + len(region_list) % 2)
+        col = i // (len(region_list) // 2 + len(region_list) % 2)
+        btn = tk.Button(region_frame, text=region, font=("Helvetica", 12), width=15,
                         command=lambda r=region: select_region(r))
-        btn.pack(pady=2)
+        btn.grid(row=row, column=col, padx=10, pady=5)
         buttons.append(btn)
 
 
